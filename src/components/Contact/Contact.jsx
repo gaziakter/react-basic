@@ -3,15 +3,14 @@ import './Contact.css'
 
 const Contact = () => {
 
-  function update(){
-    alert('Hello Bangladesh!')
+  const colorStyle = {
+    backgroundColor: 'red',
   }
+
   return (
     <div>
-    <h1 className='contact'>Contact</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minus, quia cum odit cumque itaque. Inventore consequuntur repellendus suscipit, eveniet neque quisquam, vero porro quas voluptates excepturi temporibus magnam accusantium!
-    </p>
-    <button onClick={update} className='contact-btn'>Click here</button>
+    <h1 style={colorStyle}>Contact</h1>
+    <button className='contact-btn'>Click here</button>
     </div>
   )
 }
