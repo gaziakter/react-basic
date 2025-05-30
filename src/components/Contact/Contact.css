@@ -1,3 +1,11 @@
 .contact{
-    color: blue;
+    background-color: rgb(88, 85, 85);
+    padding: 20px 50px;
+    color: white;
+    border-radius: 5px;
+}
+
+.contact-btn{
+    background-color: rgb(88, 85, 85);
+    color: white;
 }
