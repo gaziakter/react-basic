@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import './App.css'
+import Service from './components/Services/Service'
 
-import Contact from './components/Contact/Contact'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Contact></Contact>
+      <Service></Service>
     </>
   )
 }

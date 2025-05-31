@@ -2,6 +2,4 @@
 01. "rafce" for template
 
 
-
-
-#Status: Tutorial 5 Completed
+#Status: Tutorial 6 Completed
