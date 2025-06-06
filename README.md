@@ -2,4 +2,4 @@
 01. "rafce" for template
 
 
-#Status: Tutorial 6 Completed
+#Status: Tutorial 7 Completed
