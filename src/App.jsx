@@ -4,10 +4,7 @@ import Product from './components/Product/Product'
 
 
 function App() {
-    const products = {
-      name: 'Bottol',
-      age: 39
-    }
+    const products = ['Dhaka', 'Cumilla']
 
   return (
     <div>
