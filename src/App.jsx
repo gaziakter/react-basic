@@ -1,13 +1,17 @@
 import { useState } from 'react'
 import './App.css'
-import Navigation from './components/Navigation/Navigation'
+import Product from './components/Product/Product'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+    const products = {
+      name: 'Bottol',
+      age: 39
+    }
 
   return (
     <div>
-    <Navigation></Navigation>
+      <Product products = {products}></Product>
     </div>
   )
 }
