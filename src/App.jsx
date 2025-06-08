@@ -1,14 +1,33 @@
 import { useState } from 'react'
 import './App.css'
-import Product from './components/Product/Product'
+
 
 
 function App() {
-    const products = ['Dhaka', 'Cumilla']
+
+  const[price, setPrice]= useState(0);
+
+  const increasePrice = () => {
+    const newPrice = price +1;
+
+    setPrice(newPrice);
+  }
+
+  const decreasePrice = () => {
+    const newPrice = price -1;
+
+    setPrice(newPrice);
+  }
 
   return (
     <div>
-      <Product products = {products}></Product>
+      <h1>Price: {price}</h1>
+      <h2>Price: {price}</h2>
+      <h3>Price: {price}</h3>
+      <h4>Price: {price}</h4>
+      <h5>Price: {price}</h5>
+      <button onClick={increasePrice}>Increase</button>
+      <button onClick={decreasePrice}>Decrease</button>
     </div>
   )
 }
