@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import User from './components/User/User';
 
 
 function App() {
@@ -15,8 +16,7 @@ function App() {
 
   return (
     <div>
-    <h1>Total Data: {allData.length}</h1>
-    {allData.map(singeData => <p>{singeData.name}</p>)}
+    {allData.map(singeData => <User singeData = {singeData}></User>)}
     </div>
   )
 }
