@@ -1,11 +1,13 @@
 import React from 'react'
 
-const User = (props) => {
+const User = ({singleData}) => {
 
+    const {name, email} = singleData;
 
   return (
     <div>
-        <h1>{props.singeData.name}</h1>
+        <h1>{name}</h1>
+        <h1>{email}</h1>
     </div>
   )
 }

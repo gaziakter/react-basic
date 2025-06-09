@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div>
-    {allData.map(singeData => <User singeData = {singeData}></User>)}
+    {allData.map(singleData => <User singleData = {singleData}></User>)}
     </div>
   )
 }
