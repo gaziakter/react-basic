@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProductView = ({allProduct}) => {
+const ProductView = ({allProduct, cartData}) => {
   const{name, category, description, price}  = allProduct;
   return (
     <div>
@@ -35,7 +35,7 @@ const ProductView = ({allProduct}) => {
 
         {/* Call to Action Buttons */}
         <div className="flex justify-between items-center mt-4">
-          <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+          <button onClick={()=>cartData(allProduct)} className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
             Add to Cart
           </button>
           <button className="text-indigo-600 hover:text-indigo-800 font-semibold py-2 px-4 rounded-full transition-colors duration-200">
