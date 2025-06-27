@@ -1,13 +1,13 @@
 import React from 'react'
 import Header from '../../Header/Header'
 import Footer from '../../Footer/Footer'
-import HeroSection from '../../Section/HeroSection/HeroSection'
+import FormSection from '../../Section/FormSection/FormSection'
 
 const Home = () => {
   return (
     <div>
         <Header></Header>
-        <HeroSection></HeroSection>
+        <FormSection></FormSection>
         <Footer></Footer>
     </div>
   )
