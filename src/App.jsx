@@ -1,17 +1,17 @@
 import { useState } from 'react'
 import './App.css'
+import { Context1 } from './Contexts/context1'
+import Home from './components/Pages/Home/Home'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [a, SetA] = useState('Hello World');
 
   return (
     <div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <Context1.Provider value={[a, SetA]}>
+        <Home></Home>
+      </Context1.Provider>
     </div>
   )
 }
